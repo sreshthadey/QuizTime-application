@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b57281"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+
+            android:layout_marginTop="5dp"
+            android:progressTint="@color/color2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/progress" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noQuestion"
+                android:textColor="#7fffd4"
+                android:textSize="17dp"
+                android:layout_alignParentLeft="true"
+                android:text="Question No : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/score"
+                android:textColor="#7fffd4"
+                android:textSize="17dp"
+                android:layout_alignParentRight="true"
+                android:text="Score: "/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="355dp"
+            android:id="@+id/question"
+            android:text=" 1 + 2 = ?"
+            android:textColor="#e4e4e4"
+            android:layout_margin="20dp"
+            android:background="#e999a4"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/answer"
+            android:hint="Write your answer"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Submit"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="15sp"
+            android:textColor="@color/color1"
+            android:id="@+id/submit"
+            android:background="@drawable/btn_bg"/>
+    </LinearLayout>
+
+</LinearLayout>

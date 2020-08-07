@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/rel1">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="30sp"
+            android:textColor="@color/color1"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linlay1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15sp"
+                    android:textColor="@color/color1"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/username"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/color1"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="password"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15sp"
+                    android:textColor="@color/color1"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:textColor="@color/color1"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/et_bg"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btn"
+            android:layout_below="@+id/linlay1"
+            android:text="Login"
+            android:textColor="@color/color1"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="70dp"
+            android:background="@drawable/btn_bg"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
